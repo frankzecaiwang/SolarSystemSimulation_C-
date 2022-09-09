@@ -14,8 +14,8 @@
 	<File>SolarSystem.cpp</File>
 	<File>vector2d.h</File>
 <Attribute topline="1" x="3" y="57">logfile.h</Attribute>
-<Attribute topline="141" x="1" y="166">Object.h</Attribute>
-<Attribute topline="151" x="42" y="166">SolarSystem.cpp</Attribute>
+<Attribute topline="106" x="12" y="127">Object.h</Attribute>
+<Attribute topline="206" x="6" y="222">SolarSystem.cpp</Attribute>
 <Attribute topline="131" x="19" y="167">vector2d.h</Attribute>
 <FolderState>111</FolderState>
 <Watch name="g_objArray"/>

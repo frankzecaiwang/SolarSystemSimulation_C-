@@ -1,0 +1,63 @@
+#ifndef LOGFILE_H
+#define LOGFILE_H
+#include "stdio.h"
+
+#ifndef NULL
+#define NULL 0
+#endif
+
+class CLOG
+{
+	FILE *m_fptr;
+		
+public:
+	CLOG()
+	{
+		m_fptr = NULL;	
+	}
+	
+	void setfileIO(FILE *fptr)
+	{
+		m_fptr = fptr;	
+	}
+	
+	void closefileIO()
+	{
+		if(m_fptr != NULL)
+		{
+			fclose(m_fptr);
+			m_fptr = NULL;
+		}		
+	}
+	
+	FILE * OpenFileIO()
+	{
+		m_fptr = fopen("solarsystemsimulationlog.txt","a+");
+		return m_fptr;
+	}
+	
+	~CLOG()
+	{
+		if(m_fptr != NULL)
+		{
+			fclose(m_fptr);
+			m_fptr = NULL;
+		}
+	}
+	
+	void writelog(char * pLog)
+	{
+		if(m_fptr == NULL) return;
+		fprintf(m_fptr,pLog);	
+	}
+	
+	FILE * getfileIO()
+	{
+		return m_fptr;	
+	}
+	
+};
+
+
+#endif
+

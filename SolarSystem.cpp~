@@ -268,3 +268,4 @@ void OnMouseLBUPEvent(HWND hwnd, LPARAM lParam)
 	//pt.y = GET_Y_LPARAM(lParam);		
 }
 
+
